@@ -1,0 +1,100 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  /* размер шрифта */
+  color: #0a143a;
+  /* цвет шрифта */
+}
+.header {
+  max-width: 1146px;
+  /* максимальная ширина */
+  margin: auto;
+  /* выравнивание посередине */
+  padding-top: 30px;
+}
+.navbar {
+  display: flex;
+  /* делаем блок гибким */
+  align-items: center;
+  /* выравниваем по вертикали по центру */
+  justify-content: space-between;
+  /* разбросать элементы по краям */
+  margin-bottom: 24px;
+}
+.navbar-menu {
+  margin-right: auto;
+  /* автоматический отступ справа */
+}
+.menu {
+  list-style: none;
+  /* отключаем точки в списке */
+  margin: 0;
+  /* обнуляем отступы */
+  padding-left: 22px;
+  /* внутренний отступ слева */
+  padding-right: 22px;
+  /* внутренний отступ справа */
+  display: flex;
+}
+.menu-item:not(:last-child) {
+  /* для всех пунктов меню кроме последнего */
+  margin-right: 14px;
+  /* применяем отступ справа */
+}
+.menu-link {
+  text-decoration: none;
+  /* отключаем подчеркивания ссылок */
+  color: inherit;
+  /* возьми цвет текста как у твоего родителя (body) */
+}
+.button {
+  text-decoration: none;
+  display: inline-block;
+  /* чтобы нормально воспринимать отступы */
+  padding: 10px 15px;
+  /* расстояние сверху и снизу внутри кнопки */
+  cursor: pointer;
+  /* при наведении на кнопку мышка превращается в указатель */
+}
+.button-link {
+  color: inherit;
+}
+.button-primary {
+  background: #256eeb;
+  /* фон */
+  border-radius: 5px;
+  /* скругление углов */
+  color: white;
+}
+.search-panel {
+  height: 50px;
+  background: #256eeb;
+  border-radius: 5px;
+  /* радиус скругления по краям */
+  display: flex;
+  padding: 3px;
+  /* отступ */
+}
+.search-input {
+  flex-grow: 1;
+  /* растягивается на все свободное место */
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.search-button {
+  background: #256eeb;
+  border: none;
+  color: white;
+  padding-left: 20px;
+  padding-right: 17px;
+  display: flex;
+  align-items: center;
+  /* чтобы выровнять лупу и текст посередине по центру */
+}
+.search-button-text {
+  margin-left: 5px;
+}
+/* делаем расстояние между текстом и лупой */
